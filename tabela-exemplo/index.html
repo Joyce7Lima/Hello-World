@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Pizza Planet</title>
+
+    <style>
+        .brown{background-color:#dfbdadec;}
+        #verde{background-color: rgb(229, 255, 0);}
+        #centralizado {text-align: center;}
+    </style>
+
+
+</head>
+<body>
+    <table border="1">
+        <tr id="verde"> 
+            <td id="centralizado" colspan="30">
+            <img src="pizzaplanet.png" height="200" >
+            </td>
+        </tr>
+        <br>
+        <tr class="brown">
+            <td colspan="10">Nome:</td>
+            <td><input type="text" name="nome" size="50"></td> 
+        </tr>
+        <tr>
+            <td colspan="10">Tamanho:</td>
+            <td>
+            <input type="radio" name="tamanho" value="p"> Pequeno<br>
+            <input type="radio" name="tamanho" value="m"> Médio<br> 
+            <input type="radio" name="tamanho" value="g"checked> Grande
+            </td>        
+        </tr>
+        <tr class="brown">
+            <td colspan="10">Sabor</td>
+            <td>
+            <select name="sabor">
+            <option>Calabresa</option>   
+            <option>Frango com Catupiry</option>
+            <option>Lombo Canadense</option>
+            <option>Napolitano</option>
+            <option>Quatro Queijos</option>
+            <option selected disabled>Por favor selecione...</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+           <td colspan="10">Adicionais</td> 
+           <td>
+           <input type="checkbox" name="Bordas Recheadas" value="Sim"checked> Borda Recheada<br>
+           <input type="checkbox" name="Queijo Extra" value="Sim"> Queijo Extra    
+           </td>
+        </tr>
+        <tr>
+            <td class="brown" colspan="30">Observações<br>
+            <textarea name="mensagem" rows="10" cols="70"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td id="centralizado" colspan="30"><input type="submit"></td>
+        </tr>
+
+
+    </table>
